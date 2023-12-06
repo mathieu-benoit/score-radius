@@ -1,0 +1,17 @@
+apiVersion: score.dev/v1b1
+metadata:
+  name: demo-redis
+containers:
+  demo-redis:
+    image: ghcr.io/radius-project/samples/demo:latest
+    variables:
+      REDIS_HOST: "${resources.redis-cart.host}"
+      REDIS_PORT: "${resources.redis-cart.port}"
+resources:
+  redis:
+    type: redis
+service:
+  ports:
+    web:
+      port: 3000
+      targetPort: 3000

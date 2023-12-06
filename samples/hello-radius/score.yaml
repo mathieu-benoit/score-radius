@@ -1,0 +1,13 @@
+apiVersion: score.dev/v1b1
+metadata:
+  name: hello-radius
+containers:
+  hello-radius:
+    image: ghcr.io/mathieu-benoit/my-sample-app:latest
+    variables:
+      MESSAGE: "Hello, Radius!"
+service:
+  ports:
+    tcp:
+      port: 8080
+      targetPort: 8080
