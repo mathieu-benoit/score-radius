@@ -34,7 +34,7 @@ helm install \
 	hello-radius \
 	--repo https://score-spec.github.io/score-helm-charts \
 	workload \
-    --values score-helm-values.yaml \
-    --set "annotations.radapp\.io/enabled=true"
-
+	--values score-helm-values.yaml \
+	--set "annotations.radapp\.io/enabled=true" \
+	--dry-run
 ```
