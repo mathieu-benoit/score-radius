@@ -13,7 +13,7 @@ helm install \
 	hello-radius \
 	--repo https://score-spec.github.io/score-helm-charts \
 	workload \
-    --values score-helm-values.yaml
+	--values score-helm-values.yaml
 ```
 
 ```bash
