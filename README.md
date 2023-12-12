@@ -28,7 +28,7 @@ kubectl rollout restart deployment hello-radius
 kubectl port-forward svc/hello-radius 8080:8080
 ```
 
-Ultimately (once the Helm chart support the annotation):
+Ultimately (once the Helm chart supports the annotation):
 ```bash
 helm install \
 	hello-radius \
