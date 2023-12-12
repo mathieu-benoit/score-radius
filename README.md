@@ -35,6 +35,6 @@ helm install \
 	--repo https://score-spec.github.io/score-helm-charts \
 	workload \
 	--values score-helm-values.yaml \
-	--set "annotations.radapp\.io/enabled=true" \
+	--set "workload.annotations.radapp\.io/enabled=true" \
 	--dry-run
 ```
